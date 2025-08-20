@@ -42,8 +42,8 @@ def predict_house_price():
 
         return jsonify({
             "status": True,
-            "Salary": np.round(float(prediction[0]), 2),  #เป็น USD 
-            "currency": "USD"
+            "Salary": np.round(float(prediction[0]), 2),  #เป็นจำนวนเงินที่คาดการณ์
+            "currency": "THB"
         })
 
     except ValidationError as ve:

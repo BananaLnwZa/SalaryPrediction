@@ -61,7 +61,7 @@ export default function Home() {
       if (getCurrency !== undefined && getCurrency !== null) {
         setCurrency(String(getCurrency));
       } else {
-        setCurrency('USD');
+        setCurrency('THB');
       }
       
     } catch (err: any) {

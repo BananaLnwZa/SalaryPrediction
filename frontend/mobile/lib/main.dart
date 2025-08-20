@@ -98,7 +98,7 @@ class _SalaryCalculatorState extends State<SalaryCalculator>
         final data = json.decode(response.body);
         setState(() {
           salary = data['Salary']?.toDouble();
-          currency = data['currency'] ?? 'USD';
+          currency = data['currency'] ?? 'THB';
         });
 
         // Trigger result animation
